@@ -44,6 +44,11 @@ menu {
     background-color: #EE82EE;
 }
 
+.debug footer {
+    min-height: 100px;
+    background-color: black;
+}
+
 /* Stile da mantenere */
 .main-header {
     padding: 15px 0;
