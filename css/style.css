@@ -47,21 +47,21 @@ menu {
     background-color: #EE82EE;
 }
 
-.debug .col60 {
+.debug .col-60 {
     background-color: #1E90FF;
     min-width: 60px;
 }
 
-.debug .col40 {
+.debug .col-40 {
     background-color: #FFC0CB;
     min-width: 40px;
 }
 
-.debug .col60 {
+.debug .col-60 {
     border-right: 2px dashed black;
 }
 
-.debug .reverse .col60 {
+.debug .reverse .col-60 {
     border-left: 2px dashed black;
     border-right: none;
 }
@@ -71,9 +71,36 @@ menu {
     background-color: #228B22;
 }
 
-.debug footer {
+.debug .main-footer {
     min-height: 100px;
     background-color: black;
+}
+
+.debug footer .footer__firstContainer .container {
+    min-height: 300px;
+}
+
+.debug .col-4 {
+    background-color: #F08080;
+    min-width: 40px;
+    border-right: 2px dashed black;
+}
+
+.debug .col-2 {
+    background-color: #20B2AA;
+    min-width: 10px;
+    border: 2px dashed white;
+}
+
+.debug .footer__secondContainer .container {
+    min-height: 50px;
+    border: none;
+    background-color: #7FFFD4;
+}
+
+.debug .footer__secondContainer .container * {
+    background-color: #FFB6C1;
+    border-right: 2px dashed black;
 }
 
 /* Stile da mantenere */
@@ -115,12 +142,34 @@ ul.flex {
 }
 
 
-.col40 {
+.col-40 {
     flex-basis: 40%;
 }
 
-.col60 {
+.col-60 {
     flex-basis: 60%;
     /* Alternativa:
     flex-grow: 1; */
+}
+
+/* Footer */
+.main-footer {
+    padding-top: 10px;
+}
+
+.main-footer .footer__firstContainer {
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+}
+
+.col-2 {
+    flex-basis: calc((100% / 12) * 2);
+}
+
+.footer__secondContainer {
+    padding-top: 20px;
 }
