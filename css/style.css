@@ -44,6 +44,16 @@ menu {
     background-color: #EE82EE;
 }
 
+.debug .col60 {
+    background-color: #1E90FF;
+    min-width: 60px;
+}
+
+.debug .col40 {
+    background-color: #FFC0CB;
+    min-width: 40px;
+}
+
 .debug footer {
     min-height: 100px;
     background-color: black;
@@ -75,4 +85,18 @@ nav.container.flex {
 
 ul.flex {
     gap: 20px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.col40 {
+    flex-basis: 40%;
+}
+
+.col60 {
+    flex-basis: 60%;
+    /* Alternativa:
+    flex-grow: 1; */
 }
