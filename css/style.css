@@ -17,9 +17,12 @@ menu {
     /* padding: 10px 60px; */
 }
 
+.debug .main-header ul {
+    padding: 0 10px;
+}
+
 .debug .container {
     background-color: #DAA520;
-    /* padding: 5px; */
     border: 2px dashed black;
 }
 
@@ -32,7 +35,7 @@ menu {
     background-color: #00008B;
 }
 
-.debug main>:nth-child(2n + 1) {
+.debug .main-main>:nth-child(2n + 3) {
     background-color: #D3D3D3;
 }
 
@@ -54,20 +57,26 @@ menu {
     min-width: 40px;
 }
 
+.debug .col60 {
+    border-right: 2px dashed black;
+}
+
+.debug .reverse .col60 {
+    border-left: 2px dashed black;
+    border-right: none;
+}
+
+.debug .main-main :last-child .container {
+    min-height: 400px;
+    background-color: #228B22;
+}
+
 .debug footer {
     min-height: 100px;
     background-color: black;
 }
 
 /* Stile da mantenere */
-.main-header {
-    padding: 15px 0;
-}
-
-.main-main>* {
-    padding: 50px 0;
-}
-
 .container {
     /* max-width: 1200px; */
     /* TODO: DA RIMUOVERE E RIMETTERE 1200 */
@@ -79,6 +88,24 @@ menu {
     display: flex;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Header */
+.main-header {
+    padding: 15px 0;
+}
+
+.main-header .container {
+    padding: 10px;
+}
+
+/* Main */
+.main-main>* {
+    padding: 50px 0;
+}
+
 nav.container.flex {
     justify-content: space-between;
 }
@@ -87,9 +114,6 @@ ul.flex {
     gap: 20px;
 }
 
-.reverse {
-    flex-direction: row-reverse;
-}
 
 .col40 {
     flex-basis: 40%;
