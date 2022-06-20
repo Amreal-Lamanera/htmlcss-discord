@@ -16,6 +16,11 @@ a {
     color: black;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+}
+
 /* TODO: proprietà di debug, da commentare una volta finito */
 .debug header {
     background-color: #ADD8E6;
@@ -103,7 +108,7 @@ a {
     background-color: #7FFFD4;
 }
 
-.debug .footer__secondContainer .container * {
+.debug .footer__secondContainer .container>* {
     background-color: #FFB6C1;
     border: 2px dashed black;
 }
