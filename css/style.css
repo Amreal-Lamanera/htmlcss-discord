@@ -100,7 +100,7 @@ menu {
 
 .debug .footer__secondContainer .container * {
     background-color: #FFB6C1;
-    border-right: 2px dashed black;
+    border: 2px dashed black;
 }
 
 /* Stile da mantenere */
@@ -172,4 +172,13 @@ ul.flex {
 
 .footer__secondContainer {
     padding-top: 20px;
+}
+
+.footer__secondContainer .container.flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__secondContainer .container.flex * {
+    padding: 5px 10px;
 }
