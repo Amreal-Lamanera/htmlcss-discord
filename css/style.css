@@ -11,7 +11,7 @@ menu {
     list-style: none;
 }
 
-/* TODO: proprietà di debug */
+/* TODO: proprietà di debug, da commentare una volta finito */
 .debug header {
     background-color: #ADD8E6;
     /* padding: 10px 60px; */
@@ -93,7 +93,7 @@ menu {
 }
 
 .debug .footer__secondContainer .container {
-    min-height: 100px;
+    min-height: 50px;
     border: none;
     background-color: #7FFFD4;
 }
@@ -105,7 +105,9 @@ menu {
 
 /* Stile da mantenere */
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    /* TODO: DA RIMUOVERE E RIMETTERE 1200 */
+    max-width: 600px;
     margin: 0 auto;
 }
 
