@@ -18,8 +18,31 @@ menu {
     border: 5px solid black;
 }
 
-.debug .main-nav {
+.debug .container {
     background-color: orange;
     padding: 5px;
     border: 2px dashed black;
+}
+
+.debug .container ul {
+    border-right: 2px dashed black;
+    border-left: 2px dashed black;
+}
+
+/* Stile da mantenere */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+nav.container.flex {
+    justify-content: space-between;
+}
+
+ul.flex {
+    gap: 20px;
 }
