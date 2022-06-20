@@ -13,13 +13,12 @@ menu {
 
 /* TODO: proprietà di debug, da commentare una volta finito */
 .debug header {
-    background-color: aquamarine;
+    background-color: #ADD8E6;
     /* padding: 10px 60px; */
-    border: 5px solid black;
 }
 
 .debug .container {
-    background-color: orange;
+    background-color: #DAA520;
     /* padding: 5px; */
     border: 2px dashed black;
 }
@@ -29,10 +28,29 @@ menu {
     border-left: 2px dashed black;
 }
 
+.debug main>:nth-child(1) {
+    background-color: #00008B;
+}
+
+.debug main>:nth-child(2n + 1) {
+    background-color: #D3D3D3;
+}
+
+.debug main div>div {
+    min-height: 200px;
+}
+
+.debug .container.tighter {
+    background-color: #EE82EE;
+}
+
 /* Stile da mantenere */
-header,
-section {
-    padding: 10px 0;
+.main-header {
+    padding: 15px 0;
+}
+
+.main-main>* {
+    padding: 50px 0;
 }
 
 .container {
