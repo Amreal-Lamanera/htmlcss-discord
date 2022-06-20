@@ -14,13 +14,13 @@ menu {
 /* TODO: proprietà di debug, da commentare una volta finito */
 .debug header {
     background-color: aquamarine;
-    padding: 10px 60px;
+    /* padding: 10px 60px; */
     border: 5px solid black;
 }
 
 .debug .container {
     background-color: orange;
-    padding: 5px;
+    /* padding: 5px; */
     border: 2px dashed black;
 }
 
@@ -30,8 +30,15 @@ menu {
 }
 
 /* Stile da mantenere */
+header,
+section {
+    padding: 10px 0;
+}
+
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    /* TODO: DA RIMUOVERE E RIMETTERE 1200 */
+    max-width: 600px;
     margin: 0 auto;
 }
 
