@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-style: 'Roboto', sans-serif;
 }
 
 ul,
@@ -19,6 +20,10 @@ a {
 button {
     border: none;
     background-color: transparent;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* TODO: proprietà di debug */
@@ -145,6 +150,7 @@ button {
 
 nav.container.flex {
     justify-content: space-between;
+    align-items: center;
 }
 
 ul.flex {
