@@ -11,7 +11,7 @@ menu {
     list-style: none;
 }
 
-/* TODO: proprietà di debug, da commentare una volta finito */
+/* TODO: proprietà di debug */
 .debug header {
     background-color: #ADD8E6;
     /* padding: 10px 60px; */
@@ -40,7 +40,7 @@ menu {
 }
 
 .debug main div>div {
-    min-height: 200px;
+    min-height: 600px;
 }
 
 .debug .container.tighter {
@@ -67,7 +67,7 @@ menu {
 }
 
 .debug .main-main :last-child .container {
-    min-height: 400px;
+    min-height: 1000px;
     background-color: #228B22;
 }
 
@@ -77,7 +77,7 @@ menu {
 }
 
 .debug footer .footer__firstContainer .container {
-    min-height: 300px;
+    min-height: 700px;
 }
 
 .debug .col-4 {
@@ -93,7 +93,7 @@ menu {
 }
 
 .debug .footer__secondContainer .container {
-    min-height: 50px;
+    min-height: 100px;
     border: none;
     background-color: #7FFFD4;
 }
@@ -105,9 +105,7 @@ menu {
 
 /* Stile da mantenere */
 .container {
-    /* max-width: 1200px; */
-    /* TODO: DA RIMUOVERE E RIMETTERE 1200 */
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
