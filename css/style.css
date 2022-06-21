@@ -115,7 +115,7 @@ ul.row {
     font-weight: bold;
     line-height: 95%;
     text-transform: uppercase;
-    padding-bottom: 50px;
+    padding: 0 150px 50px;
 }
 
 .hero p {
