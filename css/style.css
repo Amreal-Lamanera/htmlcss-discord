@@ -60,6 +60,10 @@ nav.container .row {
     align-items: center;
 }
 
+.main-header__logo__img {
+    width: 150px;
+}
+
 nav.container .row .main-header__list {
     margin: 0 auto;
 }
@@ -234,7 +238,7 @@ ul.row {
 }
 
 
-.main__grid__button {
+.main__button {
     font-size: 1.2em;
     color: white;
     background-color: #5865f2;
@@ -243,11 +247,11 @@ ul.row {
     margin-top: 30px;
 }
 
-.main__grid__button i {
+.main__button i {
     margin-right: 10px;
 }
 
-.main__grid__button:hover {
+.main__button:hover {
     cursor: pointer;
     background-color: #7289da;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -288,12 +292,11 @@ ul.row {
 }
 
 .main-footer__ita {
-    width: 20px;
-    vertical-align: middle;
+    width: 40px;
 }
 
+.main-footer__ita,
 .main-footer__lang {
-    display: inline-block;
     vertical-align: middle;
 }
 
@@ -313,6 +316,19 @@ ul.row {
 .footer__secondContainer .container .row {
     justify-content: space-between;
     align-items: center;
+}
+
+.main-footer__button.main__button {
+    margin: 0;
+}
+
+.main-footer__button.main__button button {
+    color: #FFF;
+    cursor: pointer;
+}
+
+.main-footer__logo img {
+    height: 40px;
 }
 
 /* Per spostare il button a sx avrei potuto usare, invece che space-beetween, margin-left auto su button o margin-right auto su logo - Soluzione molto più comoda in caso di 3 elementi di cui, ad esempio, i primi due sono affiancati e l'ultimo è in fondo, con flex dovrei annidare i primi 2 in un altro div a sua volta flex, mentre con margin auto avrei finito con una singola riga di codice. UNO DEI POCHI CASI in cui usiamo margin con flex (ovviamente funziona solo in orizzontale) */

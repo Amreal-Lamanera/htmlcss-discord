@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="main-header__logo">
 
-                        <img width="150px" src="img/logo.svg" alt="Logo">
+                        <img class="main__logo__img" src="img/logo.svg" alt="Logo">
 
                     </div>
 
@@ -118,10 +118,10 @@
             </section>
 
             <div class="wave">
-                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1"
+                <svg style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1"
                     xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                        <linearGradient x1="0" x2="0" y1="1" y2="0">
                             <stop stop-color="rgba(246, 246, 246, 1)" offset="0%"></stop>
                             <stop stop-color="rgba(246, 246, 246, 1)" offset="100%"></stop>
                         </linearGradient>
@@ -157,10 +157,10 @@
                 </div>
             </section>
             <div class="wave">
-                <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1"
+                <svg style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1"
                     xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                        <linearGradient x1="0" x2="0" y1="1" y2="0">
                             <stop stop-color="rgba(246, 246, 246, 1)" offset="0%"></stop>
                             <stop stop-color="rgba(246, 246, 246, 1)" offset="100%"></stop>
                         </linearGradient>
@@ -197,10 +197,10 @@
             </section>
 
             <div class="wave">
-                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1"
+                <svg style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1"
                     xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                        <linearGradient x1="0" x2="0" y1="1" y2="0">
                             <stop stop-color="rgba(246, 246, 246, 1)" offset="0%"></stop>
                             <stop stop-color="rgba(246, 246, 246, 1)" offset="100%"></stop>
                         </linearGradient>
@@ -239,7 +239,7 @@
                                 Pronto a iniziare la tua avventura?
                             </p>
 
-                            <button class="main__grid__button">
+                            <button class="main__button">
                                 <i class="fa-solid fa-download"></i>
                                 Scarica per Windows
                             </button>
@@ -263,7 +263,7 @@
 
                             <img class="main-footer__ita" src="img/ita.png" alt="">
 
-                            <span class="main-footer__lang">Italiano &#8964;</span>
+                            <span class="main-footer__lang">Italiano <i class="fa-solid fa-angle-down"></i></span>
 
                             <ul class="main-footer__social row">
 
@@ -438,11 +438,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="main-footer__logo">
-                            <img height="40px" src="img/lama.PNG" alt="Logo">
+                            <a href="#">
+                                <img src="img/logo.svg" alt="Logo">
+                            </a>
                         </div>
 
-                        <div class="main-footer__button">
-                            <button onclick="window.alert('FUNZIONA!')">Bottone</button>
+                        <div class="main-footer__button main__button">
+                            <button onclick="window.alert('FUNZIONA!')">Registrati</button>
                         </div>
                     </div>
 
