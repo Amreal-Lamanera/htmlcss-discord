@@ -148,6 +148,7 @@ ul.row {
 
 .hero button:first-child:hover {
     color: #1E90FF;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hero button:first-child i {
@@ -156,7 +157,12 @@ ul.row {
 
 .hero button:last-child {
     color: white;
-    background-color: black;
+    background-color: #000000;
+}
+
+.hero button:last-child:hover {
+    background-color: #383838;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Main Grid */
@@ -217,12 +223,34 @@ ul.row {
     padding: 0 125px 0;
 }
 
-/* font-size: 4em;
+.main__grid__ready {
+    background-image: url('../img/stars.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    font-size: 2em;
     font-weight: bold;
-    line-height: 95%;
-    text-transform: uppercase;
-    padding: 0 150px 50px; */
+}
 
+
+.main__grid__button {
+    font-size: 1.2em;
+    color: white;
+    background-color: #5865f2;
+    border-radius: 40px;
+    padding: 8px 32px;
+    margin-top: 30px;
+}
+
+.main__grid__button i {
+    margin-right: 10px;
+}
+
+.main__grid__button:hover {
+    cursor: pointer;
+    background-color: #7289da;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
 
 /* Footer */
 .main-footer {
