@@ -162,6 +162,10 @@ ul.row {
     flex-grow: 1; */
 }
 
+.grey-BG {
+    background-color: #f6f6f6;
+}
+
 .main-main__grid .row {
     align-items: center;
 }
@@ -181,11 +185,6 @@ ul.row {
 .main-main .main-main__grid p {
     margin-top: 24px;
     line-height: 200%;
-}
-
-/* TODO: perché non va? */
-.main-main section:nth-child(2n + 3) {
-    background-color: #f6f6f6;
 }
 
 /* Ultimo container */
