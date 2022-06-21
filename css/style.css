@@ -69,6 +69,25 @@ ul.row {
     gap: 20px;
 }
 
+.main-header__list .row a:hover {
+    text-decoration: underline;
+}
+
+.main-header__login button {
+    padding: 5px 10px;
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.main-header__login button:hover {
+    cursor: pointer;
+}
+
+.main-header__login button:active {
+    background-color: #CCCCCC;
+}
+
 /* Main */
 .main-main>* {
     padding: 50px 0;
@@ -81,8 +100,9 @@ ul.row {
 
 .jumbo {
     background-image: url('../img/jumbo.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: cover;
+    /* In caso di zoom rimane centrato lo sfondo */
+    background-position: center;
 }
 
 /* Container griglia */
@@ -158,17 +178,17 @@ ul.row {
     background-color: #00008B;
 } */
 
+/* .debug .container.tighter {
+    min-height: 600px;
+    background-color: #EE82EE;
+} */
+
 .debug .main-main>:nth-child(2n + 3) {
     background-color: #D3D3D3;
 }
 
 .debug main div>.row {
     min-height: 600px;
-}
-
-.debug .container.tighter {
-    min-height: 600px;
-    background-color: #EE82EE;
 }
 
 .debug .col-60 {
