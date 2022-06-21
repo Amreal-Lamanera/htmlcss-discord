@@ -143,11 +143,6 @@ img {
     padding: 10px;
 }
 
-/* Main */
-.main-main>* {
-    padding: 50px 0;
-}
-
 nav.container.flex {
     justify-content: space-between;
     align-items: center;
@@ -157,6 +152,14 @@ ul.flex {
     gap: 20px;
 }
 
+/* Main */
+.main-main>* {
+    padding: 50px 0;
+}
+
+.container.tighter {
+    max-width: 900px;
+}
 
 .col-40 {
     flex-basis: 40%;
