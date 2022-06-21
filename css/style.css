@@ -90,10 +90,10 @@ ul.row {
 
 /* Main */
 .main-main>* {
-    padding: 100px 0;
+    padding: 100px 25px;
 }
 
-/* Section Jumbo */
+/* Section Hero */
 .container.tighter {
     max-width: 768px;
 }
@@ -151,7 +151,7 @@ ul.row {
     background-color: black;
 }
 
-/* Container griglia */
+/* Main Grid */
 .col-40 {
     flex-basis: 40%;
 }
@@ -160,6 +160,26 @@ ul.row {
     flex-basis: 60%;
     /* Alternativa:
     flex-grow: 1; */
+}
+
+.main-main__grid .row {
+    align-items: center;
+}
+
+.main-main__grid .col-40.row {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 150px;
+}
+
+.main-main .main-main__grid h2 {
+    font-size: 3em;
+    line-height: 120%;
+}
+
+.main-main .main-main__grid p {
+    margin-top: 24px;
+    line-height: 200%;
 }
 
 /* Ultimo container */
@@ -201,9 +221,9 @@ ul.row {
 
 /* TODO: proprietà di debug */
 
-/* .debug header {
+.debug header {
     background-color: #ADD8E6;
-     padding: 10px 60px;
+    padding: 10px 60px;
 }
 
 .debug .main-header ul {
@@ -218,23 +238,23 @@ ul.row {
 .debug .container ul {
     border-right: 2px dashed black;
     border-left: 2px dashed black;
-} */
+}
 
-/* .debug main>:nth-child(1) {
+*/ .debug main>:nth-child(1) {
     background-color: #00008B;
-} */
+}
 
-/* .debug .container.tighter {
+.debug .container.tighter {
     min-height: 600px;
     background-color: #EE82EE;
-} */
+}
 
 .debug .main-main>:nth-child(2n + 3) {
     background-color: #D3D3D3;
 }
 
 .debug main div>.row {
-    /* min-height: 600px; */
+    min-height: 600px;
 }
 
 .debug .col-60 {
