@@ -157,10 +157,12 @@ ul.flex {
     padding: 50px 0;
 }
 
+/* Primo container */
 .container.tighter {
     max-width: 900px;
 }
 
+/* Container griglia */
 .col-40 {
     flex-basis: 40%;
 }
@@ -171,11 +173,14 @@ ul.flex {
     flex-grow: 1; */
 }
 
+/* Ultimo container */
+
 /* Footer */
 .main-footer {
     padding-top: 10px;
 }
 
+/* Prima parte footer */
 .main-footer .footer__firstContainer {
     padding-bottom: 30px;
     border-bottom: 1px solid white;
@@ -189,6 +194,7 @@ ul.flex {
     flex-basis: calc((100% / 12) * 2);
 }
 
+/* Seconda parte footer */
 .footer__secondContainer {
     padding-top: 20px;
 }
