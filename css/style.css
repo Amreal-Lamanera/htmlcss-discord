@@ -26,6 +26,14 @@ img {
     max-width: 100%;
 }
 
+svg {
+    display: block;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
 /* Stile da mantenere */
 .container {
     max-width: 1200px;
@@ -163,7 +171,8 @@ ul.row {
 }
 
 .grey-BG {
-    background-color: #f6f6f6;
+    /* Non ho usato #F6F6F6 perché sul mio primo monitor non si vede D: */
+    background-color: #D6D6D6;
 }
 
 .main-main__grid .row {
