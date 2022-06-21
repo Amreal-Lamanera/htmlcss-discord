@@ -30,10 +30,6 @@ svg {
     display: block;
 }
 
-.rotate {
-    transform: rotate(180deg);
-}
-
 /* Stile da mantenere */
 .container {
     max-width: 1200px;
@@ -122,7 +118,7 @@ ul.row {
     color: #FFF;
 }
 
-.hero h1 {
+.hero .hero_title {
     font-size: 4em;
     font-weight: bold;
     line-height: 95%;
@@ -130,7 +126,7 @@ ul.row {
     padding: 0 150px 50px;
 }
 
-.hero p {
+.hero .hero__paragraph {
     font-size: 1.5em;
 }
 
@@ -175,8 +171,7 @@ ul.row {
 }
 
 .grey-BG {
-    /* Non ho usato #F6F6F6 perché sul mio primo monitor non si vede D: */
-    background-color: #D6D6D6;
+    background-color: #F6F6F6;
 }
 
 .main-main__grid .row {
@@ -196,6 +191,7 @@ ul.row {
 .main-main .main-main__grid .main__grid__paragraph {
     margin-top: 24px;
     line-height: 200%;
+    font-size: 1.5em;
 }
 
 /* Main Grid Reverse */
@@ -205,7 +201,28 @@ ul.row {
     margin-top: 0;
 }
 
-/* Ultimo container */
+/* Main Grid Centered */
+.main-main__grid.centered {
+    text-align: center;
+}
+
+.main__grid__txt .main__grid__title {
+    line-height: 95%;
+    text-transform: uppercase;
+    padding: 0 150px 0;
+}
+
+.main-main__grid.centered .main__grid__txt .main__grid__paragraph {
+    line-height: 100%;
+    padding: 0 125px 0;
+}
+
+/* font-size: 4em;
+    font-weight: bold;
+    line-height: 95%;
+    text-transform: uppercase;
+    padding: 0 150px 50px; */
+
 
 /* Footer */
 .main-footer {
