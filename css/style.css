@@ -69,7 +69,6 @@ nav.container .row .main-header__list {
 }
 
 nav.container .row .main-header__login {
-    width: 150px;
     text-align: right;
 }
 
@@ -82,10 +81,10 @@ ul.row {
 }
 
 .main-header__login button {
-    padding: 10px 15px;
+    padding: 10px 25px;
     display: block;
     background-color: #FFFFFF;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .main-header__login button:hover {
