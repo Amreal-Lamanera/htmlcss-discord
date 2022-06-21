@@ -97,8 +97,12 @@ ul.row {
 }
 
 /* Main */
-.main-main .container {
+.main-main .container.container.tighter {
     padding: 100px 0;
+}
+
+.main-main .container.container {
+    padding: 50px 0;
 }
 
 /* Section Hero */
@@ -180,20 +184,25 @@ ul.row {
 }
 
 .main-main__grid .col-40 {
-    /* flex-direction: column;
-    justify-content: flex-start; */
-    padding-right: 150px;
+    padding-left: 90px;
     margin-top: -40px;
 }
 
-.main-main .main-main__grid h2 {
+.main-main .main-main__grid .main__grid__title {
     font-size: 3em;
     line-height: 120%;
 }
 
-.main-main .main-main__grid p {
+.main-main .main-main__grid .main__grid__paragraph {
     margin-top: 24px;
     line-height: 200%;
+}
+
+/* Main Grid Reverse */
+.main-main__grid .row.row-reverse .col-40 {
+    padding-left: 0;
+    padding-right: 90px;
+    margin-top: 0;
 }
 
 /* Ultimo container */
