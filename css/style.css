@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 ul,
@@ -74,10 +74,10 @@ ul.row {
 }
 
 .main-header__login button {
-    padding: 5px 10px;
+    padding: 10px 15px;
     display: block;
     background-color: #FFFFFF;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 .main-header__login button:hover {
@@ -90,19 +90,65 @@ ul.row {
 
 /* Main */
 .main-main>* {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
-/* Primo container */
+/* Section Jumbo */
 .container.tighter {
-    max-width: 900px;
+    max-width: 768px;
 }
 
-.jumbo {
+.hero {
     background-image: url('../img/jumbo.png');
     background-size: cover;
     /* In caso di zoom rimane centrato lo sfondo */
     background-position: center;
+}
+
+.hero .col-100 {
+    text-align: center;
+    color: #FFF;
+}
+
+.hero h1 {
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 95%;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.hero .hero__buttons .row {
+    margin-top: 24px;
+    justify-content: center;
+}
+
+.hero button {
+    border-radius: 28px;
+    font-size: 1.5em;
+    padding: 16px 32px;
+}
+
+.hero button:first-child {
+    background-color: white;
+    margin-right: 24px;
+}
+
+.hero button:first-child:hover {
+    color: #1E90FF;
+}
+
+.hero button:first-child i {
+    margin-right: 10px;
+}
+
+.hero button:last-child {
+    color: white;
+    background-color: black;
 }
 
 /* Container griglia */
@@ -188,7 +234,7 @@ ul.row {
 }
 
 .debug main div>.row {
-    min-height: 600px;
+    /* min-height: 600px; */
 }
 
 .debug .col-60 {
