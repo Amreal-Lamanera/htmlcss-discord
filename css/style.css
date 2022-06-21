@@ -14,7 +14,7 @@ menu {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #FFF;
 }
 
 button {
@@ -26,10 +26,118 @@ img {
     max-width: 100%;
 }
 
+/* Stile da mantenere */
+.container {
+    max-width: 1200px;
+    /* TODO: DA RIMUOVERE E RIMETTERE 1200 */
+    /* max-width: 600px; */
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Header */
+.main-header {
+    padding: 15px 0;
+    background-color: #255ee9;
+}
+
+.main-header .container {
+    padding: 10px;
+}
+
+nav.container .row {
+    align-items: center;
+}
+
+nav.container .row .main-header__list {
+    margin: 0 auto;
+}
+
+nav.container .row .main-header__login {
+    width: 150px;
+    text-align: right;
+}
+
+ul.row {
+    gap: 20px;
+}
+
+/* Main */
+.main-main>* {
+    padding: 50px 0;
+}
+
+/* Primo container */
+.container.tighter {
+    max-width: 900px;
+}
+
+.jumbo {
+    background-image: url('../img/jumbo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Container griglia */
+.col-40 {
+    flex-basis: 40%;
+}
+
+.col-60 {
+    flex-basis: 60%;
+    /* Alternativa:
+    flex-grow: 1; */
+}
+
+/* Ultimo container */
+
+/* Footer */
+.main-footer {
+    padding-top: 10px;
+}
+
+/* Prima parte footer */
+.main-footer .footer__firstContainer {
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+}
+
+.col-2 {
+    flex-basis: calc((100% / 12) * 2);
+}
+
+/* Seconda parte footer */
+.footer__secondContainer {
+    padding-top: 20px;
+}
+
+.footer__secondContainer .container .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Per spostare il button a sx avrei potuto usare, invece che space-beetween, margin-left auto su button o margin-right auto su logo - Soluzione molto più comoda in caso di 3 elementi di cui, ad esempio, i primi due sono affiancati e l'ultimo è in fondo, con flex dovrei annidare i primi 2 in un altro div a sua volta flex, mentre con margin auto avrei finito con una singola riga di codice. UNO DEI POCHI CASI in cui usiamo margin con flex (ovviamente funziona solo in orizzontale) */
+
+.footer__secondContainer .container .row * {
+    padding: 5px 10px;
+}
+
 /* TODO: proprietà di debug */
-.debug header {
+
+/* .debug header {
     background-color: #ADD8E6;
-    /* padding: 10px 60px; */
+     padding: 10px 60px;
 }
 
 .debug .main-header ul {
@@ -44,11 +152,11 @@ img {
 .debug .container ul {
     border-right: 2px dashed black;
     border-left: 2px dashed black;
-}
+} */
 
-.debug main>:nth-child(1) {
+/* .debug main>:nth-child(1) {
     background-color: #00008B;
-}
+} */
 
 .debug .main-main>:nth-child(2n + 3) {
     background-color: #D3D3D3;
@@ -117,96 +225,4 @@ img {
 .debug .footer__secondContainer .container .row>* {
     background-color: #FFB6C1;
     border: 2px dashed black;
-}
-
-/* Stile da mantenere */
-.container {
-    max-width: 1200px;
-    /* TODO: DA RIMUOVERE E RIMETTERE 1200 */
-    /* max-width: 600px; */
-    margin: 0 auto;
-}
-
-.row {
-    display: flex;
-}
-
-.row-reverse {
-    flex-direction: row-reverse;
-}
-
-/* Header */
-.main-header {
-    padding: 15px 0;
-}
-
-.main-header .container {
-    padding: 10px;
-}
-
-nav.container .row {
-    justify-content: space-between;
-    align-items: center;
-}
-
-ul.row {
-    gap: 20px;
-}
-
-/* Main */
-.main-main>* {
-    padding: 50px 0;
-}
-
-/* Primo container */
-.container.tighter {
-    max-width: 900px;
-}
-
-/* Container griglia */
-.col-40 {
-    flex-basis: 40%;
-}
-
-.col-60 {
-    flex-basis: 60%;
-    /* Alternativa:
-    flex-grow: 1; */
-}
-
-/* Ultimo container */
-
-/* Footer */
-.main-footer {
-    padding-top: 10px;
-}
-
-/* Prima parte footer */
-.main-footer .footer__firstContainer {
-    padding-bottom: 30px;
-    border-bottom: 1px solid white;
-}
-
-.col-4 {
-    flex-basis: calc((100% / 12) * 4);
-}
-
-.col-2 {
-    flex-basis: calc((100% / 12) * 2);
-}
-
-/* Seconda parte footer */
-.footer__secondContainer {
-    padding-top: 20px;
-}
-
-.footer__secondContainer .container .row {
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Per spostare il button a sx avrei potuto usare, invece che space-beetween, margin-left auto su button o margin-right auto su logo - Soluzione molto più comoda in caso di 3 elementi di cui, ad esempio, i primi due sono affiancati e l'ultimo è in fondo, con flex dovrei annidare i primi 2 in un altro div a sua volta flex, mentre con margin auto avrei finito con una singola riga di codice. UNO DEI POCHI CASI in cui usiamo margin con flex (ovviamente funziona solo in orizzontale) */
-
-.footer__secondContainer .container .row * {
-    padding: 5px 10px;
 }
