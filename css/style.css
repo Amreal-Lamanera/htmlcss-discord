@@ -204,6 +204,8 @@ ul.flex {
     align-items: center;
 }
 
+/* Per spostare il button a sx avrei potuto usare, invece che space-beetween, margin-left auto su button o margin-right auto su logo - Soluzione molto più comoda in caso di 3 elementi di cui, ad esempio, i primi due sono affiancati e l'ultimo è in fondo, con flex dovrei annidare i primi 2 in un altro div a sua volta flex, mentre con margin auto avrei finito con una singola riga di codice. UNO DEI POCHI CASI in cui usiamo margin con flex (ovviamente funziona solo in orizzontale) */
+
 .footer__secondContainer .container.flex * {
     padding: 5px 10px;
 }
