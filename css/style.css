@@ -54,11 +54,12 @@ img {
     background-color: #D3D3D3;
 }
 
-.debug main div>.container {
+.debug main div>.row {
     min-height: 600px;
 }
 
 .debug .container.tighter {
+    min-height: 600px;
     background-color: #EE82EE;
 }
 
@@ -76,7 +77,7 @@ img {
     border-right: 2px dashed black;
 }
 
-.debug .reverse .col-60 {
+.debug .row-reverse .col-60 {
     border-left: 2px dashed black;
     border-right: none;
 }
@@ -91,7 +92,7 @@ img {
     background-color: black;
 }
 
-.debug footer .footer__firstContainer .container {
+.debug footer .footer__firstContainer .row {
     min-height: 650px;
 }
 
@@ -107,13 +108,13 @@ img {
     border: 2px dashed white;
 }
 
-.debug .footer__secondContainer .container {
+.debug .footer__secondContainer .row {
     min-height: 100px;
     border: none;
     background-color: #7FFFD4;
 }
 
-.debug .footer__secondContainer .container>* {
+.debug .footer__secondContainer .container .row>* {
     background-color: #FFB6C1;
     border: 2px dashed black;
 }
@@ -126,11 +127,11 @@ img {
     margin: 0 auto;
 }
 
-.flex {
+.row {
     display: flex;
 }
 
-.reverse {
+.row-reverse {
     flex-direction: row-reverse;
 }
 
@@ -143,12 +144,12 @@ img {
     padding: 10px;
 }
 
-nav.container.flex {
+nav.container .row {
     justify-content: space-between;
     align-items: center;
 }
 
-ul.flex {
+ul.row {
     gap: 20px;
 }
 
@@ -199,13 +200,13 @@ ul.flex {
     padding-top: 20px;
 }
 
-.footer__secondContainer .container.flex {
+.footer__secondContainer .container .row {
     justify-content: space-between;
     align-items: center;
 }
 
 /* Per spostare il button a sx avrei potuto usare, invece che space-beetween, margin-left auto su button o margin-right auto su logo - Soluzione molto più comoda in caso di 3 elementi di cui, ad esempio, i primi due sono affiancati e l'ultimo è in fondo, con flex dovrei annidare i primi 2 in un altro div a sua volta flex, mentre con margin auto avrei finito con una singola riga di codice. UNO DEI POCHI CASI in cui usiamo margin con flex (ovviamente funziona solo in orizzontale) */
 
-.footer__secondContainer .container.flex * {
+.footer__secondContainer .container .row * {
     padding: 5px 10px;
 }
