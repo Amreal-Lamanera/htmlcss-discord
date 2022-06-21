@@ -170,7 +170,6 @@ ul.row {
     /* flex-direction: column;
     justify-content: flex-start; */
     padding-right: 150px;
-    /* TODO: DA RIVEDERE */
     margin-top: -40px;
 }
 
@@ -184,6 +183,7 @@ ul.row {
     line-height: 200%;
 }
 
+/* TODO: perché non va? */
 .main-main section:nth-child(2n + 3) {
     background-color: #f6f6f6;
 }
