@@ -230,6 +230,10 @@ ul.row {
     text-align: center;
 }
 
+.main-main__grid.centered img {
+    margin: 0 auto;
+}
+
 .main__grid__txt .main__grid__title {
     line-height: 95%;
     text-transform: uppercase;
@@ -347,9 +351,10 @@ ul.row {
 
 .main-footer__button .button {
     font-size: 1em;
+    padding: 10px 15px;
 }
 
-.footer__secondContainer .container .row * {
+.footer__secondContainer .container .row>* {
     padding: 5px 10px;
 }
 
