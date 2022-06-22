@@ -317,6 +317,11 @@ ul.row {
 .main-footer__ita,
 .main-footer__lang {
     vertical-align: middle;
+    margin-right: 15px;
+}
+
+.main-footer__lang i {
+    margin-left: 15px;
 }
 
 .main-footer__social.row {
