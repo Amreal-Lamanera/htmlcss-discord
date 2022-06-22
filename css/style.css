@@ -82,7 +82,6 @@ ul.row {
 
 .main-header__login button {
     padding: 10px 25px;
-    display: block;
     background-color: #FFFFFF;
     border-radius: 20px;
 }
@@ -95,12 +94,26 @@ ul.row {
     background-color: #CCCCCC;
 }
 
-/* Main */
-.main-main .container.container.tighter {
-    padding: 100px 0;
+.button {
+    border-radius: 288px;
+    font-size: 1em;
+    padding: 16px 32px;
 }
 
-.main-main .container.container {
+.main-header__login .button {
+    padding: 5px 15px;
+}
+
+.button--white {
+    background-color: #FFFFFF;
+}
+
+/* Main */
+.main-main .container.container.tighter {
+    padding: 110px 0;
+}
+
+.main-main .container {
     padding: 50px 0;
 }
 
@@ -126,7 +139,9 @@ ul.row {
     font-weight: bold;
     line-height: 95%;
     text-transform: uppercase;
-    padding: 0 150px 50px;
+    padding: 0 150px;
+    /* Per distanziare i contenuti meglio margin */
+    margin-bottom: 40px;
 }
 
 .hero .hero__paragraph {
@@ -138,32 +153,26 @@ ul.row {
     justify-content: center;
 }
 
-.hero button {
-    border-radius: 28px;
-    font-size: 1.5em;
-    padding: 16px 32px;
-}
-
-.hero button:first-child {
-    background-color: white;
+.hero .button.button--download {
     margin-right: 24px;
+    font-size: 1.5em;
 }
 
-.hero button:first-child:hover {
+.hero .button.button--white:hover {
     color: #1E90FF;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-.hero button:first-child i {
+.hero .button.button--download i {
     margin-right: 10px;
 }
 
-.hero button:last-child {
+.hero .button.button--black {
     color: white;
     background-color: #000000;
 }
 
-.hero button:last-child:hover {
+.hero .button.button--black:hover {
     background-color: #383838;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
@@ -188,26 +197,32 @@ ul.row {
 }
 
 .main-main__grid .col-40 {
-    padding-left: 90px;
-    margin-top: -40px;
+    padding-left: 110px;
 }
 
 .main-main .main-main__grid .main__grid__title {
     font-size: 3em;
-    line-height: 120%;
+    line-height: 1.2em;
 }
 
 .main-main .main-main__grid .main__grid__paragraph {
     margin-top: 24px;
-    line-height: 200%;
+    line-height: 2em;
     font-size: 1.5em;
+}
+
+.main-main__grid img {
+    display: block;
 }
 
 /* Main Grid Reverse */
 .main-main__grid .row.row-reverse .col-40 {
     padding-left: 0;
-    padding-right: 90px;
-    margin-top: 0;
+    padding-right: 110px;
+}
+
+.main-main__grid .row-reverse img {
+    margin-left: auto;
 }
 
 /* Main Grid Centered */
@@ -237,20 +252,20 @@ ul.row {
 }
 
 
-.main__button {
+.button--blue {
     font-size: 1.2em;
     color: white;
     background-color: #5865f2;
-    border-radius: 40px;
+    /* border-radius: 40px;
     padding: 8px 32px;
-    margin-top: 30px;
+    margin-top: 30px; */
 }
 
-.main__button i {
+.button i {
     margin-right: 10px;
 }
 
-.main__button:hover {
+.button--blue.button:hover {
     cursor: pointer;
     background-color: #7289da;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -279,7 +294,7 @@ ul.row {
 }
 
 .main-footer .row [class^='col'] * {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .main-footer__title {
@@ -297,6 +312,14 @@ ul.row {
 .main-footer__ita,
 .main-footer__lang {
     vertical-align: middle;
+}
+
+.main-footer__social.row {
+    gap: 28px;
+}
+
+.main-footer__social i {
+    font-size: 25px;
 }
 
 .main-footer .footer__firstContainer a:hover {
@@ -317,24 +340,19 @@ ul.row {
     align-items: center;
 }
 
-.main-footer__button.main__button {
-    margin: 0;
-}
-
-.main-footer__button.main__button button {
-    color: #FFF;
-    cursor: pointer;
-}
-
 .main-footer__logo img {
     height: 40px;
 }
 
-/* Per spostare il button a sx avrei potuto usare, invece che space-beetween, margin-left auto su button o margin-right auto su logo - Soluzione molto più comoda in caso di 3 elementi di cui, ad esempio, i primi due sono affiancati e l'ultimo è in fondo, con flex dovrei annidare i primi 2 in un altro div a sua volta flex, mentre con margin auto avrei finito con una singola riga di codice. UNO DEI POCHI CASI in cui usiamo margin con flex (ovviamente funziona solo in orizzontale) */
+.main-footer__button .button {
+    font-size: 1em;
+}
 
 .footer__secondContainer .container .row * {
     padding: 5px 10px;
 }
+
+/* Per spostare il button a sx avrei potuto usare, invece che space-beetween, margin-left auto su button o margin-right auto su logo - Soluzione molto più comoda in caso di 3 elementi di cui, ad esempio, i primi due sono affiancati e l'ultimo è in fondo, con flex dovrei annidare i primi 2 in un altro div a sua volta flex, mentre con margin auto avrei finito con una singola riga di codice. UNO DEI POCHI CASI in cui usiamo margin con flex (ovviamente funziona solo in orizzontale) */
 
 /* TODO: proprietà di debug */
 
